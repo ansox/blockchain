@@ -24,7 +24,7 @@ Card.Header = styled.div`
   font-weight: bold;
 `
 
-Card.body = styled.div`
+Card.Body = styled.div`
   width: 100%;
   height: 100%;
   text-align: left;
@@ -48,7 +48,7 @@ const BlockCard = ({block}) => {
   return(
     <Card>
       <Card.Header>Block {block.index}</Card.Header>
-      <Card.body>
+      <Card.Body>
         <label>Timestamp</label>
         <p>{block.timestamp}</p>
 
@@ -63,7 +63,7 @@ const BlockCard = ({block}) => {
 
         <label>Proof of work</label>
         <p>{block.proofOfWork}</p>
-      </Card.body>
+      </Card.Body>
     </Card>
   )
 }
